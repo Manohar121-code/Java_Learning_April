@@ -30,6 +30,12 @@ public class DataTypes {
 		System.out.println(intValue);
 		
 		int givenTheNameVeryBig = 10;
+		
+		int i2 = 10;
+		System.out.println("integer value is - " + i2);
+		
+		String s = "Naresh";
+		System.out.println("String value is - " + s);
 
 		System.out.println("Main method ended");
 	}
