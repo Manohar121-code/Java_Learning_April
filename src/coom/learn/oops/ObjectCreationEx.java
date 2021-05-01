@@ -9,6 +9,7 @@ public class ObjectCreationEx {
 	}
 
 	public static void main(String[] args) {
+//		Object creation Syntax
 //		<classType> <identifier> = new <classType>();
 		ObjectCreationEx obj1 = new ObjectCreationEx();
 		obj1.id = 10;
