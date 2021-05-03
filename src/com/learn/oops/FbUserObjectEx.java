@@ -1,4 +1,4 @@
-package coom.learn.oops;
+package com.learn.oops;
 
 public class FbUserObjectEx {
 	public static void main(String[] args) {
