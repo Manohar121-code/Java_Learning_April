@@ -1,13 +1,12 @@
-package com.learn.part3.collections;
+package com.learn.part3.collections.list;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Vector;
 
-public class VectorEx {
+public class ArrayListEx {
 	public static void main(String[] args) {
-		List list = new Vector<>();
-		
+		List list = new ArrayList();
 		list.add(10);
 		list.add(30);
 		list.add("java");
@@ -16,11 +15,13 @@ public class VectorEx {
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
+		
 		System.out.println("----------");
 		
 		for (Object obj : list) {
 			System.out.println(obj);
 		}
+		
 		System.out.println("----------");
 		
 		Iterator itr = list.iterator();
@@ -30,6 +31,7 @@ public class VectorEx {
 		}
 		
 		System.out.println("---------------------");
+		
 		System.out.println("Before adding element, the size - "+list.size());
 		list.add("python");
 		System.out.println("After adding element, the size - "+list.size());
