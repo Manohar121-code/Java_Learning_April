@@ -1,6 +1,6 @@
 package com.learn.part3.collections.set.userDefinedObjs;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
 	private int empId;
 	private String empName;
 	private double salary;
@@ -64,4 +64,19 @@ public class Employee {
 		return true;
 	}
 
+	@Override
+	public int compareTo(Employee o) {
+		if (this.getEmpId() == o.getEmpId()) {
+			return 0;
+		} else if (this.getEmpId() > o.getEmpId()) {
+			return 1;
+		}
+		return -1;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", salary=" + salary + "]";
+	}
+	
 }
